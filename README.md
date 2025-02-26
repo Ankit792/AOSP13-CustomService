@@ -23,6 +23,9 @@ dart_mx8mm:/ $ logcat | grep MathService
 
 dart_mx8mm:/ $ service call math 1 i32 5 i32 3
 Result: Parcel(00000000 00000008   '........')
-dart_mx8mm:/ $ logcat | grep avc
 
+dart_mx8mm:/ $ logcat | grep avc
 02-26 10:17:31.763   269   269 E SELinux : avc:  denied  { add } for pid=615 uid=1000 name=math scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=1
+
+## Behavior in Enforcing Mode
+When the system is in **Enforcing** mode, the service runs with restrictions, and there will not be any avc denials after implementing seppolicy like in private directory math_service.te and service_contexts
