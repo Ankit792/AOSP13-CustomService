@@ -1,3 +1,4 @@
 type math_service, domain, service_manager_type;
 
 allow system_server math_service:service_manager { add };
+allow platform_app math_service:service_manager { find };
