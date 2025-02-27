@@ -8,4 +8,9 @@ public abstract class Context {
     * @hide
     */
     public static final String MATH_SERVICE = "math";
+
+    /**
+    * @hide
+    */
+    public static final String LOCK_SERVICE = "lock_service";
 }

@@ -37,6 +37,8 @@ When the system is in **Enforcing** mode, the service runs with restrictions, an
 
 
 
-### WiFi check Service
+## WiFi check Service
 
 WifiCheckService is an Android background service that periodically checks the Wi-Fi connectivity status in the background. If the device is disconnected from Wi-Fi, it logs a message and displays a Toast notification to alert the user. It runs a repeating task (Runnable) using a Handler. The service stops when it is explicitly destroyed.
+
+## Lock Service
